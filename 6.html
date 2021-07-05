@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Las Maquinas del Corazon</title>
+</head>
+
+<body class="w3-center">
+
+    <h1>ENIGME 6</h1>
+
+    <img src="./fig/6_1.png " alt=" ">
+    <br><br>
+    <img src="./fig/6_2.png " alt=" ">
+    <br><br>
+
+    <br><br>
+    <input type="text" id="localInput" name="name" size="10">
+    <br>
+    <button class="w3-button w3-black w3-section" type="button" onclick="testLocalValue();">VALIDER</button>
+
+
+
+    <footer class=" w3-center w3-black w3-padding-64 w3-opacity  ">
+        <input type="text" id="globalInput" name="name" size="20">
+        <br>
+        <button class="w3-button w3-white w3-section" type="button" onclick="testGlobalValue();">TRY</button>
+
+    </footer>
+
+
+    <script>
+        function testLocalValue() {
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("localInput").value.toLowerCase();
+            if (inputVal == "e") {
+                window.location.href = "7.html";
+            } else {
+                // Displaying the value
+                alert("Mauvaise réponse...");
+            }
+
+        }
+
+        function testGlobalValue() {
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("globalInput").value.toLowerCase();
+            var check = inputVal.includes("kermesse du sale")
+            if (check == true) {
+                window.location.href = "kds.html";
+            } else {
+                alert("Mauvaise réponse...");
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>
